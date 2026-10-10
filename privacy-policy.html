@@ -74,42 +74,60 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">SentimenTrader for TradingView &mdash; Last updated: September 30, 2026</p>
+    <p class="subtitle">SentimenTrader for TradingView &mdash; Last updated: October 10, 2026</p>
 
     <h2>Overview</h2>
-    <p>SentimenTrader for TradingView is a browser extension that displays SentimenTrader sentiment indicators on TradingView charts. This privacy policy describes how the extension handles your data.</p>
+    <p>SentimenTrader for TradingView is the official browser extension from SentimenTrader that displays sentiment indicators on TradingView charts. This privacy policy describes how the extension handles your data.</p>
 
     <h2>Data Collection</h2>
-    <div class="highlight">
-        <strong>The extension does not collect any data.</strong>
-    </div>
+
+    <h3>Authentication Information</h3>
     <ul>
-        <li>No analytics or telemetry</li>
-        <li>No user behavior tracking</li>
-        <li>No data sent to any server other than sentimentrader.com (your own API requests)</li>
+        <li>Your SentimenTrader <strong>username and password</strong> are collected to authenticate with the SentimenTrader API</li>
+        <li>This data is required to access your subscribed sentiment indicators</li>
+    </ul>
+
+    <h3>Website Content</h3>
+    <ul>
+        <li>The extension reads <strong>TradingView page content</strong> (specifically the current symbol/ticker) from the DOM</li>
+        <li>This is used solely to display relevant sentiment indicators for the symbol you are viewing</li>
+        <li>No other website content is collected or transmitted</li>
     </ul>
 
     <h2>Data Storage</h2>
 
     <h3>Login Credentials</h3>
     <ul>
-        <li>Your SentimenTrader username and password are stored locally in <code>chrome.storage.local</code></li>
-        <li>The password is encrypted before storage using <strong>AES-256-GCM</strong> with a key derived from the Chrome extension ID</li>
-        <li>Credentials are never transmitted to any server other than the SentimenTrader API</li>
+        <li>Your SentimenTrader username and password are stored <strong>locally</strong> in <code>chrome.storage.local</code></li>
+        <li>The password is encrypted before storage</li>
+        <li>Credentials are <strong>never transmitted</strong> to any server other than <code>api.sentimentrader.com</code></li>
     </ul>
 
     <h3>User Preferences</h3>
     <ul>
-        <li>Theme, panel position, favorites, and other settings are stored locally in <code>chrome.storage.local</code></li>
-        <li>These settings never leave your device</li>
+        <li>Theme, panel position, favorites, and other settings are stored <strong>locally</strong> in <code>chrome.storage.local</code></li>
+        <li>These settings <strong>never leave your device</strong></li>
+    </ul>
+
+    <h2>What We Do NOT Collect</h2>
+    <ul>
+        <li>No analytics or telemetry</li>
+        <li>No user behavior tracking (clicks, mouse position, keystrokes)</li>
+        <li>No browsing history</li>
+        <li>No personal information (name, address, email, age, ID numbers)</li>
+        <li>No health information</li>
+        <li>No financial or payment information</li>
+        <li>No location data</li>
+        <li>No personal communications</li>
     </ul>
 
     <h2>Data Transmission</h2>
-    <p>All API requests are made directly from your browser to <code>https://api.sentimentrader.com</code>. No intermediary servers are involved.</p>
+    <p>All API requests are made <strong>directly</strong> from your browser to <code>https://api.sentimentrader.com</code>. No intermediary servers are involved.</p>
 
     <h3>What is sent:</h3>
     <ul>
         <li>Your SentimenTrader username and password (HTTP Basic Auth) to authenticate API requests</li>
+        <li>The current symbol detected from TradingView (to fetch relevant indicators)</li>
         <li>Standard HTTP headers (User-Agent, etc.)</li>
     </ul>
 
@@ -119,17 +137,19 @@
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>The extension does not integrate with any third-party analytics, advertising, or tracking services.</p>
+    <p>The extension does <strong>not</strong> integrate with any third-party analytics, advertising, or tracking services.</p>
+
+    <h2>Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, transfer, or share your data with third parties. Your data is only used for the extension's core functionality: displaying SentimenTrader indicators on TradingView charts.</p>
 
     <h2>Changes to This Policy</h2>
     <p>Updates to this privacy policy will be reflected in the extension's version history and the Chrome Web Store listing.</p>
 
     <h2>Contact</h2>
-    <p>For privacy concerns, please contact the developer through the Chrome Web Store support page.</p>
+    <p>For privacy concerns, contact <a href="https://www.sentimentrader.com/support">SentimenTrader Support</a>.</p>
 
     <div class="footer">
-        <p>SentimenTrader for TradingView &copy; 2026. All rights reserved.</p>
-        <p>SentimenTrader is a trademark of its respective owner. This extension is not affiliated with or endorsed by SentimenTrader or TradingView.</p>
+        <p>SentimenTrader for TradingView &copy; 2026 SentimenTrader. All rights reserved.</p>
     </div>
 </body>
 </html>
